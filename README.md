@@ -11,3 +11,5 @@ composer require sergeich5/laravel-ip-middleware
 ```bash
 php artisan vendor:publish --tag=ip-middleware
 ```
+
+3. Use `\Sergeich5\LaravelIpMiddleware\Http\Middleware\IpFilterMiddleware` wherever you want
