@@ -1,0 +1,22 @@
+{
+    "name": "sergeich5/laravel-ip-middleware",
+    "license": "MIT",
+    "description": "IP filter middleware for Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Sergeich5\\LaravelIpMiddleware\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sergeich5\\LaravelIpMiddleware\\IpMiddlewareServiceProvider"
+            ]
+        }
+    }
+}
