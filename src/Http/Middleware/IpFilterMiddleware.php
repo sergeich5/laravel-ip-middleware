@@ -20,7 +20,7 @@ class IpFilterMiddleware
     function handle(Request $request, Closure $next)
     {
         if (app()->environment('production') && !$this->isIpInWhiteList($request->ip()))
-            abort(403);
+            abort(config('ip-middleware.error-status-code', 403));
 
         return $next($request);
     }

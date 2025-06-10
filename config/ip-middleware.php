@@ -5,4 +5,6 @@ return [
         'ips' => [],
         'domains' => [],
     ],
+
+    'error-status-code' => 403,
 ];
